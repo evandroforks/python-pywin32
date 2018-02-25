@@ -17,7 +17,7 @@ LIB_PATHS = [
 for lib in LIB_PATHS:
     if lib[0] not in sys.path:
         sys.path.append(lib[0])
-        print("python-pywin32: Added '%s'" % lib[1])
+        print("reloading plugin %s" % lib[1])
 
 pywin32_path = join(PACKAGE_PATH, "pywin32_system32")
 if pywin32_path not in environ["PATH"]:
